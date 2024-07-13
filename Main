@@ -1,3 +1,5 @@
+local player = game.Players.LocalPlayers
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Arceus X Neo Scripts", HidePremium = false, SaveConfig = true, ConfigFolder = "ArceusXNeoScripts"})
 
@@ -13,8 +15,3 @@ ScriptTab:AddButton({
       		print("Aimbot Executed")
   	end    
 })
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
