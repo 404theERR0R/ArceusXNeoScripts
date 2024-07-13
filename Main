@@ -9,7 +9,7 @@ local ScriptTab = Window:MakeTab({
 
 ScriptTab:AddButton({
 	Name = "Aimbot",
-	Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/ArceusX-Aimbot.lua")))
+	Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/ArceusX-Aimbot.lua"))();)
       		print("Aimbot Executed")
   	end    
 })
