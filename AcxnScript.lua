@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Arceus X Neo Scripts", HidePremium = false, SaveConfig = true, ConfigFolder = "ArceusXNeoScripts"})
+local Window = OrionLib:MakeWindow({Name = "Arceus X Neo Scripts", HidePremium = false, IntroEnabled = false, IntroText = "Arceus X Neo Scripts", SaveConfig = true, ConfigFolder = "ArceusXNeoScripts"})
 
 local Tab = Window:MakeTab({
 	Name = "Quick Execute Scripts",
@@ -7,9 +7,13 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+--Function
+function aimbot()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/ArceusX-Aimbot.lua"))();
+
+--Toggle
 Tab:AddButton({
 	Name = "Aimbot",
-	Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/ArceusX-Aimbot.lua"))();)
-      		print("Script Executed")
+	Callback = function(aimbot)
   	end    
 })
