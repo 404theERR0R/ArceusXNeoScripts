@@ -2,6 +2,6 @@ An Unofficial project to let users execute Arceus X Neo's Quick Execute Scripts 
 
 Sources:
 Arceus X Neo: https://github.com/SPDM-Team/Arceus-X-NEO-public
-Arceus X V3: https://github.com/SPDM-Team/ArceusX-V3-Scripts
+Arceus X V3: https://github.com/AZYsGithub/chillz-workshop/
 
 Used Orion Lib: https://github.com/shlexware/Orion/blob/main/Documentation.md
