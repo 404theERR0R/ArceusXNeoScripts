@@ -53,12 +53,38 @@ Tab1:AddButton({
 Tab2:AddSlider({
 	Name = "Walkspeed",
 	Min = 0,
-	Max = 500,
+	Max = 1000,
 	Default = 16,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
 	ValueName = "Speed",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+Tab2:AddSlider({
+	Name = "Jump Height",
+	Min = 0,
+	Max = 1000,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+
+Tab2:AddSlider({
+	Name = "Gravity",
+	Min = 0,
+	Max = 1000,
+	Default = 196.2,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Gravity",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.Gravity = Value
 	end    
 })
