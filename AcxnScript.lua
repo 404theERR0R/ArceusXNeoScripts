@@ -47,3 +47,18 @@ Tab1:AddButton({
       		print("Keyboard Executed")
   	end    
 })
+
+--Tab2
+
+Tab2:AddSlider({
+	Name = "Walkspeed",
+	Min = 0,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
