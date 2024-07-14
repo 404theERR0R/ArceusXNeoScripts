@@ -16,13 +16,13 @@ local Tab2 = Window:MakeTab({
 })
 
 local Tab3 = Window:MakeTab({
-	Name = "Removed",
+	Name = "Removed Scripts",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local Tab4 = Window:MakeTab({
-	Name = "Arceus X V3",
+	Name = "Arceus X V3 Scripts",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
