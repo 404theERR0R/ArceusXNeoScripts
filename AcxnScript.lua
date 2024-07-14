@@ -15,6 +15,18 @@ local Tab2 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab3 = Window:MakeTab({
+	Name = "Removed",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab4 = Window:MakeTab({
+	Name = "Arceus X V3",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 -- Sections
 
 local Section = Tab1:AddSection({
@@ -25,15 +37,31 @@ local Section = Tab2:AddSection({
 	Name = "GUI"
 })
 
+local Section = Tab3:AddSection({
+	Name = "Scripts Removed from the Menu"
+})
+
+local Section = Tab4:AddSection({
+	Name = "Arceus X V3 Scripts"
+})
+
 -- Buttons
 
---[[TEMPLATE:
+--[[TEMPLATE ("[]" not included):
+
 Tab:AddButton({
 	Name = "Button",
 	Callback = function() 
       		print("Script Executed")
   	end    
 })
+
+]]
+
+--[[ Template 2: 
+
+loadstring(game:HttpGet(""))()
+
 ]]
 
 -- Tab1
@@ -80,13 +108,6 @@ Tab1:AddButton({
 })
 
 Tab1:AddButton({
-	Name = "Fates ESP",
-	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua", Method = "GET"}).Body)()
-      		print("Fates ESP Executed")
-  	end    
-})
-
-Tab1:AddButton({
 	Name = "Infinite Yield",
 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
       		print("Infinite Yield Executed")
@@ -94,21 +115,7 @@ Tab1:AddButton({
 })
 
 Tab1:AddButton({
-	Name = "Owl Hub",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-      		print("Owl Hub Executed")
-  	end    
-})
-
-Tab1:AddButton({
-	Name = "Pwner Hub",
-	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
-      		print("Pwner Hub Executed")
-  	end    
-})
-
-Tab1:AddButton({
-	Name = "Unnamed ESP",
+	Name = "Unnamed ESP (Not Recommended for Mobile",
 	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", Method = "GET"}).Body)()
       		print("Unnamed ESP Executed")
   	end    
@@ -134,6 +141,37 @@ Tab2:AddButton({
 	Name = "Relaunch GUI",
 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/404theERR0R/ArceusXNeoScripts/main/AcxnScript.lua"))()
       		print("GUI Relaunched")
+  	end    
+})
+
+--Tab3
+
+Tab1:AddButton({
+	Name = "Fates ESP",
+	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua", Method = "GET"}).Body)()
+      		print("Fates ESP Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Owl Hub",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+      		print("Owl Hub Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Pwner Hub (Not Working)",
+	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+      		print("Pwner Hub Executed")
+  	end    
+})
+
+--Tab4
+Tab:AddButton({
+	Name = "Button",
+	Callback = function() 
+      		print("Script Executed")
   	end    
 })
 
