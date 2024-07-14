@@ -184,16 +184,79 @@ Tab3:AddButton({
 --Tab4
 
 Tab4:AddButton({
-	Name = "Button",
-	Callback = function() 
-      		print("Script Executed")
+	Name = "Aimbot",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/ArceusX-V3-Scripts/main/ArceusX-Aimbot.lua"))()
+      		print("Aimbot ACXV3 Executed")
   	end    
 })
 
 Tab4:AddButton({
-	Name = "Button",
-	Callback = function() 
-      		print("Script Executed")
+	Name = "Executer",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/ArceusX-V3-Scripts/main/ArceusX-Executor.lua"))()
+      		print("Executer ACXV3 Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Fly",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/ArceusX-V3-Scripts/main/ArceusX-Fly.lua"))()
+      		print("Fly ACXV3 Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Keyboard",
+	Callback = function() loadstring(game:HttpGet("https://github.com/SPDM-Team/ArceusX-V3-Scripts/blob/main/ArceusX-Keyboard.lua"))()
+      		print("ACXV3 Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Shiftlock",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/ArceusX-V3-Scripts/main/ArceusX-Shiftlock.lua"))()
+      		print("ACXV3 Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Btools",
+	Callback = function() loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))();
+      		print("Btools Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Dex Explorer",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/Dex-Explorer.lua"))()
+      		print("Dex Explorer Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Infinite Yield",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+      		print("Infinite Yield Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Fates ESP",
+	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua", Method = "GET"}).Body)()
+      		print("Fates ESP Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Owl Hub",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+      		print("Owl Hub Executed")
+  	end    
+})
+
+Tab4:AddButton({
+	Name = "Pwner Hub (Not Working)",
+	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+      		print("Pwner Hub Executed")
   	end    
 })
 
