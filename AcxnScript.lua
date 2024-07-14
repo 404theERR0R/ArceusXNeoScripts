@@ -146,29 +146,51 @@ Tab2:AddButton({
 
 --Tab3
 
-Tab1:AddButton({
+Tab3:AddButton({
 	Name = "Fates ESP",
 	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua", Method = "GET"}).Body)()
       		print("Fates ESP Executed")
   	end    
 })
 
-Tab1:AddButton({
+Tab3:AddButton({
 	Name = "Owl Hub",
 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
       		print("Owl Hub Executed")
   	end    
 })
 
-Tab1:AddButton({
+Tab3:AddButton({
 	Name = "Pwner Hub (Not Working)",
 	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
       		print("Pwner Hub Executed")
   	end    
 })
 
+Tab3:AddButton({
+	Name = "Alysse (Key)",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/NathTheDev/AlysseAndroid/main/AlysseUI.lua"))()
+      		print("Alysse Executed")
+  	end    
+})
+
+Tab3:AddButton({
+	Name = "CubiX (Buggy)",
+	Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/bot21333/sss/main/message_2.txt', true))();
+      		print("CubiX Executed")
+  	end    
+})
+
 --Tab4
-Tab:AddButton({
+
+Tab4:AddButton({
+	Name = "Button",
+	Callback = function() 
+      		print("Script Executed")
+  	end    
+})
+
+Tab4:AddButton({
 	Name = "Button",
 	Callback = function() 
       		print("Script Executed")
