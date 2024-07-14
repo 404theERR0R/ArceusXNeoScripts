@@ -26,7 +26,8 @@ local Section = Tab2:AddSection({
 })
 
 -- Buttons
---[[Template:
+
+--[[TEMPLATE:
 Tab:AddButton({
 	Name = "Button",
 	Callback = function() 
@@ -34,6 +35,7 @@ Tab:AddButton({
   	end    
 })
 ]]
+
 -- Tab1
 Tab1:AddButton({
 	Name = "Aimbot",
