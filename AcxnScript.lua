@@ -22,7 +22,7 @@ local Tab3 = Window:MakeTab({
 })
 
 local Tab4 = Window:MakeTab({
-	Name = "Arceus X V3 Scripts",
+	Name = "Arceus X V3",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
