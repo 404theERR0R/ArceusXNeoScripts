@@ -124,13 +124,6 @@ Tab1:AddButton({
 --Tab2
 
 Tab2:AddButton({
-	Name = "Arceus X V3 (Remake)",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-      		print("Arceus X V3 (Remake) Executed")
-  	end    
-})
-
-Tab2:AddButton({
 	Name = "Destroy GUI",
 	Callback = function() OrionLib:Destroy()
       		print("GUI Destroyed")
@@ -182,6 +175,13 @@ Tab3:AddButton({
 })
 
 --Tab4
+
+Tab4:AddButton({
+	Name = "Arceus X V3 (Remake)",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+      		print("Arceus X V3 (Remake) Executed")
+  	end    
+})
 
 Tab4:AddButton({
 	Name = "Aimbot (V3 Remake)",
