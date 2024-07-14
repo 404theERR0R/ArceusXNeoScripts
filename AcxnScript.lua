@@ -16,3 +16,10 @@ local Section = Tab1:AddSection({
 })
 
 -- Button
+
+Tab1:AddButton({
+	Name = "Aimbot",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/ArceusX-Aimbot.lua"))();
+		print("Script Executed")
+  	end    
+})
