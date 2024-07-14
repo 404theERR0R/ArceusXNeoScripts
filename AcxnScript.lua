@@ -66,7 +66,7 @@ Tab2:AddSlider({
 Tab2:AddTextbox({
 	Name = "Walkspeed",
 	Default = "Insert Value",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 	end	  
