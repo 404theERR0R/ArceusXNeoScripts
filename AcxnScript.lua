@@ -66,7 +66,7 @@ Tab2:AddButton({
 
 Tab2:AddButton({
 	Name = "Relaunch GUI",
-	Callback = function() 
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/404theERR0R/ArceusXNeoScripts/main/AcxnScript.lua"))()
       		print("GUI Relaunched")
   	end    
 })
