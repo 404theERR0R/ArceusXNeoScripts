@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Arceus X Neo Scripts", HidePremium = false, IntroText = "Arceus X Neo Scripts", SaveConfig = false, ConfigFolder = "AcxnScripts"})
+local Window = OrionLib:MakeWindow({Name = "Arceus X Neo Scripts", HidePremium = false, IntroText = "Arceus X Neo Scripts", SaveConfig = true, ConfigFolder = "AcxnScripts"})
 
 -- Tabs
 
@@ -25,7 +25,15 @@ local Section = Tab2:AddSection({
 	Name = "GUI"
 })
 
--- Buttons/Slider
+-- Buttons
+--[[Template:
+Tab:AddButton({
+	Name = "Button",
+	Callback = function() 
+      		print("Script Executed")
+  	end    
+})
+]]
 -- Tab1
 Tab1:AddButton({
 	Name = "Aimbot",
@@ -45,6 +53,62 @@ Tab1:AddButton({
 	Name = "Keyboard",
 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/ArceusX-Keyboard.lua"))();
       		print("Keyboard Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Shiftlock",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/ArceusX-Shiftlock.lua"))();
+      		print("Shiftlock Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Btools",
+	Callback = function() loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))();
+      		print("Btools Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Dex Explorer",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/Arceus-X-NEO-public/main/Scripts/Dex-Explorer.lua"))()
+      		print("Dex Explorer Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Fates ESP",
+	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua", Method = "GET"}).Body)()
+      		print("Fates ESP Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Infinite Yield",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+      		print("Infinite Yield Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Owl Hub",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+      		print("Owl Hub Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Pwner Hub",
+	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+      		print("Pwner Hub Executed")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Unnamed ESP",
+	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", Method = "GET"}).Body)()
+      		print("Unnamed ESP Executed")
   	end    
 })
 
