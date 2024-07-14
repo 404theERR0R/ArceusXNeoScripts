@@ -38,7 +38,7 @@ local Section = Tab2:AddSection({
 })
 
 local Section = Tab3:AddSection({
-	Name = "Scripts Removed from the Menu"
+	Name = "Scripts Removed from Arceus X Neo"
 })
 
 local Section = Tab4:AddSection({
@@ -115,7 +115,7 @@ Tab1:AddButton({
 })
 
 Tab1:AddButton({
-	Name = "Unnamed ESP (Not Recommended for Mobile",
+	Name = "Unnamed ESP (Not Recommended for Mobile)",
 	Callback = function() loadstring(request({ Url = "https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", Method = "GET"}).Body)()
       		print("Unnamed ESP Executed")
   	end    
