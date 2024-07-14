@@ -10,7 +10,7 @@ local Tab1 = Window:MakeTab({
 })
 
 local Tab2 = Window:MakeTab({
-	Name = "Player Hacks",
+	Name = "GUI",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -22,7 +22,7 @@ local Section = Tab1:AddSection({
 })
 
 local Section = Tab2:AddSection({
-	Name = "Hacks"
+	Name = "GUI"
 })
 
 -- Buttons/Slider
@@ -50,24 +50,27 @@ Tab1:AddButton({
 
 --Tab2
 
-Tab2:AddSlider({
-	Name = "Walkspeed",
-	Min = 0,
-	Max = 1000,
-	Default = 16,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Speed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end    
+Tab2:AddButton({
+	Name = "Arceus X V3 (Remake)",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+      		print("Arceus X V3 (Remake) Executed")
+  	end    
 })
 
-Tab2:AddTextbox({
-	Name = "Walkspeed",
-	Default = "Insert Value",
-	TextDisappear = false,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end	  
+Tab2:AddButton({
+	Name = "Destroy GUI",
+	Callback = function() OrionLib:Destroy()
+      		print("GUI Destroyed")
+  	end    
 })
+
+Tab2:AddButton({
+	Name = "Relaunch GUI",
+	Callback = function() 
+      		print("GUI Relaunched")
+  	end    
+})
+
+--[[Script_end (Do not edit!)]]
+
+OrionLib:Init()
