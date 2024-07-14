@@ -184,8 +184,8 @@ Tab3:AddButton({
 --Tab4
 
 Tab4:AddButton({
-	Name = "Aimbot",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/ArceusX-V3-Scripts/main/ArceusX-Aimbot.lua"))()
+	Name = "Aimbot (V3 Remake)",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Aimbot.lua"))()
       		print("Aimbot ACXV3 Executed")
   	end    
 })
@@ -198,8 +198,8 @@ Tab4:AddButton({
 })
 
 Tab4:AddButton({
-	Name = "Fly",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/ArceusX-V3-Scripts/main/ArceusX-Fly.lua"))()
+	Name = "Fly (V3 Remake)",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Fly.lua"))()
       		print("Fly ACXV3 Executed")
   	end    
 })
